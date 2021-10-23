@@ -8,7 +8,7 @@ namespace OOP_01
 {
     class Rectangle
     {
-        //le variabili di default son private
+        //le variabili di default sono private
         public int side1, side2;
         public Rectangle() : this (1)
         {
