@@ -22,7 +22,7 @@ namespace OOP_02
         {
             abele.eta = 17;
             MessageBox.Show("Età prima del richiamo di Compleanno: " + abele.eta.ToString());
-            compleanno(abele);
+            Compleanno(abele);
             MessageBox.Show("Età dopo il richiamo di Compleanno: " + abele.eta.ToString());
 
 
@@ -30,16 +30,16 @@ namespace OOP_02
         private void btnRef_Click(object sender, EventArgs e)
         {
             abele.eta = 54;
-            MessageBox.Show("Età prima del richiamo supplenza: " + abele.eta.ToString());
-            supplenza(ref abele);
-            MessageBox.Show("Età dopo il richiamo supplenza: " + abele.eta.ToString());
+            MessageBox.Show("Età prima del richiamo Supplenza: " + abele.eta.ToString());
+            Supplenza(ref abele);
+            MessageBox.Show("Età dopo il richiamo Supplenza: " + abele.eta.ToString());
         }
 
-        private void compleanno (Persona p)
+        private void Compleanno (Persona p)
         {
             p.eta++;
         }
-        private void supplenza (ref Persona p)
+        private void Supplenza (ref Persona p)
         {
             p = new Persona();
             p.eta = 27;
