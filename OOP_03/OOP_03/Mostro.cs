@@ -20,6 +20,7 @@ namespace OOP_03
         public Mostro()
         {
             nome = "Senza nome";
+            punti = 10;
         }
 
         public double Valore()
