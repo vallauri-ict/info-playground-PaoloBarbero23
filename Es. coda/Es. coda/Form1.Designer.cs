@@ -54,31 +54,28 @@
             "Giallo",
             "Verde",
             "Bianco"});
-            this.cmbCodice.Location = new System.Drawing.Point(17, 106);
-            this.cmbCodice.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbCodice.Location = new System.Drawing.Point(13, 86);
             this.cmbCodice.Name = "cmbCodice";
-            this.cmbCodice.Size = new System.Drawing.Size(160, 24);
+            this.cmbCodice.Size = new System.Drawing.Size(121, 21);
             this.cmbCodice.TabIndex = 0;
             // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(17, 43);
-            this.txtNome.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNome.Location = new System.Drawing.Point(13, 35);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(160, 22);
+            this.txtNome.Size = new System.Drawing.Size(121, 20);
             this.txtNome.TabIndex = 1;
             // 
             // nupEta
             // 
-            this.nupEta.Location = new System.Drawing.Point(17, 74);
-            this.nupEta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nupEta.Location = new System.Drawing.Point(13, 60);
             this.nupEta.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
             this.nupEta.Name = "nupEta";
-            this.nupEta.Size = new System.Drawing.Size(160, 22);
+            this.nupEta.Size = new System.Drawing.Size(120, 20);
             this.nupEta.TabIndex = 2;
             this.nupEta.Value = new decimal(new int[] {
             1,
@@ -89,39 +86,35 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(185, 46);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(139, 37);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(45, 17);
+            this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 3;
             this.label1.Text = "Nome";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(185, 76);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(139, 62);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(29, 17);
+            this.label2.Size = new System.Drawing.Size(23, 13);
             this.label2.TabIndex = 4;
             this.label2.Text = "Età";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(185, 110);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(139, 89);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(51, 17);
+            this.label3.Size = new System.Drawing.Size(40, 13);
             this.label3.TabIndex = 5;
             this.label3.Text = "Codice";
             // 
             // btnRegistra
             // 
-            this.btnRegistra.Location = new System.Drawing.Point(17, 168);
-            this.btnRegistra.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRegistra.Location = new System.Drawing.Point(13, 136);
             this.btnRegistra.Name = "btnRegistra";
-            this.btnRegistra.Size = new System.Drawing.Size(221, 33);
+            this.btnRegistra.Size = new System.Drawing.Size(166, 27);
             this.btnRegistra.TabIndex = 6;
             this.btnRegistra.Text = "Registra paziente";
             this.btnRegistra.UseVisualStyleBackColor = true;
@@ -129,10 +122,9 @@
             // 
             // btnVisualizzaPaziente
             // 
-            this.btnVisualizzaPaziente.Location = new System.Drawing.Point(17, 212);
-            this.btnVisualizzaPaziente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnVisualizzaPaziente.Location = new System.Drawing.Point(13, 172);
             this.btnVisualizzaPaziente.Name = "btnVisualizzaPaziente";
-            this.btnVisualizzaPaziente.Size = new System.Drawing.Size(221, 28);
+            this.btnVisualizzaPaziente.Size = new System.Drawing.Size(166, 23);
             this.btnVisualizzaPaziente.TabIndex = 7;
             this.btnVisualizzaPaziente.Text = "Visualizza prossimo paziente";
             this.btnVisualizzaPaziente.UseVisualStyleBackColor = true;
@@ -141,19 +133,17 @@
             // lblDatiPaziente
             // 
             this.lblDatiPaziente.AutoSize = true;
-            this.lblDatiPaziente.Location = new System.Drawing.Point(256, 218);
-            this.lblDatiPaziente.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblDatiPaziente.Location = new System.Drawing.Point(192, 177);
             this.lblDatiPaziente.Name = "lblDatiPaziente";
-            this.lblDatiPaziente.Size = new System.Drawing.Size(0, 17);
+            this.lblDatiPaziente.Size = new System.Drawing.Size(0, 13);
             this.lblDatiPaziente.TabIndex = 8;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(187, 140);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(140, 114);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(90, 17);
+            this.label4.Size = new System.Drawing.Size(67, 13);
             this.label4.TabIndex = 10;
             this.label4.Text = "Temperatura";
             // 
@@ -165,8 +155,7 @@
             0,
             0,
             65536});
-            this.nupTemp.Location = new System.Drawing.Point(19, 138);
-            this.nupTemp.Margin = new System.Windows.Forms.Padding(4);
+            this.nupTemp.Location = new System.Drawing.Point(14, 112);
             this.nupTemp.Maximum = new decimal(new int[] {
             420,
             0,
@@ -178,7 +167,7 @@
             0,
             65536});
             this.nupTemp.Name = "nupTemp";
-            this.nupTemp.Size = new System.Drawing.Size(158, 22);
+            this.nupTemp.Size = new System.Drawing.Size(118, 20);
             this.nupTemp.TabIndex = 9;
             this.nupTemp.Value = new decimal(new int[] {
             340,
@@ -188,10 +177,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(17, 248);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Location = new System.Drawing.Point(13, 202);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(221, 48);
+            this.button1.Size = new System.Drawing.Size(166, 39);
             this.button1.TabIndex = 11;
             this.button1.Text = "Visualizza temperatura massima e minima";
             this.button1.UseVisualStyleBackColor = true;
@@ -200,26 +188,28 @@
             // lblMax
             // 
             this.lblMax.AutoSize = true;
-            this.lblMax.Location = new System.Drawing.Point(256, 248);
+            this.lblMax.Location = new System.Drawing.Point(192, 202);
+            this.lblMax.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblMax.Name = "lblMax";
-            this.lblMax.Size = new System.Drawing.Size(37, 17);
+            this.lblMax.Size = new System.Drawing.Size(30, 13);
             this.lblMax.TabIndex = 12;
             this.lblMax.Text = "MAX";
             // 
             // lblMin
             // 
             this.lblMin.AutoSize = true;
-            this.lblMin.Location = new System.Drawing.Point(256, 279);
+            this.lblMin.Location = new System.Drawing.Point(192, 227);
+            this.lblMin.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblMin.Name = "lblMin";
-            this.lblMin.Size = new System.Drawing.Size(40, 17);
+            this.lblMin.Size = new System.Drawing.Size(33, 13);
             this.lblMin.TabIndex = 13;
             this.lblMin.Text = "MIN: ";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.lblMin);
             this.Controls.Add(this.lblMax);
             this.Controls.Add(this.button1);
@@ -234,7 +224,6 @@
             this.Controls.Add(this.nupEta);
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.cmbCodice);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

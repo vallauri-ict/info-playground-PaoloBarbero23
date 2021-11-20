@@ -68,9 +68,7 @@ namespace Es.coda
         {
             Paziente p = new Paziente();
             if (codaPazienteR.Count != 0)
-            {
                 visualizaPaziente(p, codaPazienteR, lblDatiPaziente);
-            }
             else
             {
                 if (codaPazienteG.Count != 0)
@@ -111,8 +109,6 @@ namespace Es.coda
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            nupTemp.ReadOnly = true;
-            nupEta.ReadOnly = true;
             cmbCodice.SelectedIndex = 0;
         }
     }
