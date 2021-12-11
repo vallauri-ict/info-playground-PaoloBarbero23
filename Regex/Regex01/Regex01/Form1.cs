@@ -42,7 +42,33 @@ namespace Regex01
                 MessageBox.Show("Trovato: gruppo: " + (++count) + " Valore: " + m.Value + " Alla posizione " + m.Index);
                 m = m.NextMatch();
             }
-                
+
+        }
+
+        private void BTNsPLIT_Click(object sender, EventArgs e)
+        {
+            string pattern = @"\d+";
+            Regex rgx = new Regex(pattern);
+            string input = "123ABCDE456FGHIJKL789MNOPQ012";
+            string[] result = rgx.Split(input);
+            for (int i = 0; i < result.Length; i++)
+            {
+                MessageBox.Show("Stringa " + (i + 1) + ": \"" + result[i] + "\" \n");
+
+            }
+            Console.WriteLine();
+        }
+
+        private void btnSplit2_Click(object sender, EventArgs e)
+        {
+            string input = "This is     text with      far too       much " +
+            "     whitespace.";
+            string pattern = "\\s+";
+            string replacement = " ";
+            Regex rgx = new Regex(pattern);
+            string result = rgx.Replace(input, replacement);
+            MessageBox.Show("Original String: " + input);
+            MessageBox.Show("Replacement String: " + result);
         }
     }
 }

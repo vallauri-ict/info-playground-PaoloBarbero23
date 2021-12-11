@@ -33,6 +33,10 @@
             this.btnTest = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btnMatch = new System.Windows.Forms.Button();
+            this.BTNsPLIT = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnSplit2 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblStringa
@@ -82,11 +86,56 @@
             this.btnMatch.UseVisualStyleBackColor = true;
             this.btnMatch.Click += new System.EventHandler(this.btnMatch_Click);
             // 
+            // BTNsPLIT
+            // 
+            this.BTNsPLIT.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTNsPLIT.Location = new System.Drawing.Point(15, 118);
+            this.BTNsPLIT.Name = "BTNsPLIT";
+            this.BTNsPLIT.Size = new System.Drawing.Size(332, 41);
+            this.BTNsPLIT.TabIndex = 6;
+            this.BTNsPLIT.Text = "MATCH";
+            this.BTNsPLIT.UseVisualStyleBackColor = true;
+            this.BTNsPLIT.Click += new System.EventHandler(this.BTNsPLIT_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 93);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(335, 13);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Uso di match nella stringa: \"123ABCDE456FGHIJKL789MNOPQ012\"";
+            // 
+            // btnSplit2
+            // 
+            this.btnSplit2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSplit2.Location = new System.Drawing.Point(356, 118);
+            this.btnSplit2.Name = "btnSplit2";
+            this.btnSplit2.Size = new System.Drawing.Size(332, 41);
+            this.btnSplit2.TabIndex = 8;
+            this.btnSplit2.Text = "MATCH";
+            this.btnSplit2.UseVisualStyleBackColor = true;
+            this.btnSplit2.Click += new System.EventHandler(this.btnSplit2_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(353, 89);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(295, 26);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Uso di match nella stringa: \"\"This is text with far too much \" +\r\n\"whitespace.\";\"" +
+    "";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnSplit2);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.BTNsPLIT);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.btnMatch);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnTest);
@@ -106,6 +155,10 @@
         private System.Windows.Forms.Button btnTest;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnMatch;
+        private System.Windows.Forms.Button BTNsPLIT;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnSplit2;
+        private System.Windows.Forms.Label label3;
     }
 }
 
