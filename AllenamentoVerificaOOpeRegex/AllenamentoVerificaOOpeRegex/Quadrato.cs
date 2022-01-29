@@ -9,6 +9,7 @@ namespace AllenamentoVerificaOOpeRegex
     class Quadrato
     {
         private int lato;
+       
         private Quadrato(int val) { this.lato = val; }
         public static Quadrato creaQuadrato(int val)
         {

@@ -29,8 +29,6 @@ namespace AllenamentoVerificaOOpeRegex
             if(nome.IsMatch(txtCognome.Text) && nome.IsMatch(txtNome.Text) && matricola.IsMatch(txtMatricola.Text))
             {
                 Associazione assoc = Associazione.GetInstance();
-                
-                
                 ok = true;
                 foreach (string key in dic.Keys)
                 {
