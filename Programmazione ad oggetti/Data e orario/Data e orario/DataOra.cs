@@ -75,5 +75,14 @@ namespace Data_e_orario
                 System.Windows.Forms.MessageBox.Show("Orario aggiornato con successo");
 
         }
+
+        public virtual void scrivi(ref int a, ref int me, ref int g, int s, int m, int h)
+        {
+            base.scrivi(ref g, ref me, ref a);
+            ore = h;
+            minuti = m;
+            secondi = s;
+
+        }
     }
 }

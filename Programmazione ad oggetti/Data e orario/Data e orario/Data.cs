@@ -41,10 +41,7 @@ namespace Data_e_orario
         }
         public virtual bool bisestile()
         {
-            if (anno % 4 == 0 && anno != 1900)
-                return true;
-            else
-                return false;
+            return DateTime.IsLeapYear(anno);
         }
 
         public virtual void leggi(int g, int m, int a)
@@ -68,61 +65,31 @@ namespace Data_e_orario
 
         }
 
-        /*public virtual void scrivi(out int g, out int m, out int a)
+        public virtual void scrivi(ref int g, ref int m, ref int a)
         {
-            bool ok = true;
-
             anno = a;
-            if (mese > 0 && mese < 13)
-                mese = m;
-            else
-                ok = false;
-            if (ok)
-            {
-                if (controlloGiorno(g))
-                    giorno = g;
-                else
-                    ok = false;
-            }
-            if (!ok)
-                System.Windows.Forms.MessageBox.Show("Formato data non corretto");
-        }*/
+            mese = m;
+            giorno = g;
+        }
 
         public virtual void domani()
         {
-            if (giorno == maxGiorno)
-            {
-
-                giorno = 1;
-                mese++;
-                if (mese == 13)
-                {
-                    mese = 1;
-                    anno++;
-                }
-                controlloGiorno(giorno);//per settare di nuovo maxGiorno
-            }
-            else
-                giorno++;
+            DateTime dt = new DateTime(anno, mese, giorno);
+            dt.AddDays(1);
+            anno = dt.Year;
+            mese = dt.Month;
+            giorno = dt.Day;
+            
 
         }
 
         public virtual void ieri()
         {
-            if (giorno == 1)
-            {
-
-                mese--;
-                if (mese == 0)
-                {
-                    mese = 12;
-                    anno--;
-                }
-                controlloGiorno(giorno);//per settare di nuovo maxGiorno
-                giorno = maxGiorno;
-            }
-            else
-                giorno--;
+            DateTime dt = new DateTime(anno, mese, giorno);
+            dt.Subtract(TimeSpan.FromDays(1));
+            anno = dt.Year;
+            mese = dt.Month;
+            giorno = dt.Day;
         }
 
         private bool controlloGiorno(int giorno)
@@ -153,6 +120,13 @@ namespace Data_e_orario
             }
             return false;
 
+        }
+
+        public virtual string Giorno()
+        {
+            DateTime dt = new DateTime(anno, mese, giorno);
+            string gg = dt.ToString("dddd");
+            return gg;
         }
     }
 

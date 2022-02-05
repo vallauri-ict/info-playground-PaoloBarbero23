@@ -87,6 +87,8 @@ namespace Data_e_orario
             btnScrivi.Enabled = val;
             btnTogli.Enabled = val;
             btnVisualizza.Enabled = val;
+            btnBisestile.Enabled = val;
+            btnGiorno.Enabled = val;
 
         }
 
@@ -210,6 +212,19 @@ namespace Data_e_orario
         {
             ora.leggi(Convert.ToInt32(nupSecondi.Value), Convert.ToInt32(nupMinuti.Value), Convert.ToInt32(nupOre.Value));
 
+        }
+
+        private void btnBisestile_Click(object sender, EventArgs e)
+        {
+            if (data.bisestile())
+                MessageBox.Show("L'anno è bisestile");
+            else
+                MessageBox.Show("L'anno non è bisestile");
+        }
+
+        private void btnGiorno_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(data.Giorno());
         }
     }
 }
