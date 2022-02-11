@@ -16,7 +16,9 @@ namespace Abstact01
 
         public Parallelepipedo()
         {
-
+            lato1 = 1;
+            lato2 = 2;
+            base.altezza = 1;
         }
 
         public Parallelepipedo(int lato1, int lato2, int altezza)

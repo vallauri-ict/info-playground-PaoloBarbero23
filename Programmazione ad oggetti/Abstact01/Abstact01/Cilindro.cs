@@ -15,8 +15,10 @@ namespace Abstact01
         }
         public Cilindro()
         {
-
+            raggio = 1;
+            base.altezza = 1;
         }
+        
 
         public Cilindro(int raggio, int altezza)
         {
