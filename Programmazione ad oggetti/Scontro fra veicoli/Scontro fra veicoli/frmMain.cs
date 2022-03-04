@@ -10,12 +10,12 @@ using System.Windows.Forms;
 
 namespace Scontro_fra_veicoli
 {
-    public partial class Form1 : Form
+    public partial class frmMain : Form
     {
         Veicolo veicolo = new Veicolo();
         List<Veicolo> v = new List<Veicolo>();
         Random rnd = new Random();
-        public Form1()
+        public frmMain()
         {
             InitializeComponent();
         }
@@ -40,10 +40,18 @@ namespace Scontro_fra_veicoli
 
         private void btnPlay_Click(object sender, EventArgs e)
         {
-            //while (v.Count != 1)
-            //{
-            veicolo.turno(v);
-            //}
+            while (v.Count > 1)
+            {
+                v = veicolo.turno(v);
+            }
+            MessageBox.Show("Scontri terminati");
+            if(v.Count == 0)
+                MessageBox.Show("Tutti i veicoli sono stati distrutti. C'è un pareggio");
+            else
+            {
+                veicolo = v.ElementAt(0);
+                MessageBox.Show("Il vincitore è " + veicolo.Type);
+            }
         }
     }
 }
