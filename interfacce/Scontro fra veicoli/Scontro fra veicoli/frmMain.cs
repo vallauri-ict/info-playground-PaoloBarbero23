@@ -22,13 +22,13 @@ namespace Scontro_fra_veicoli
 
         private void btnCamion_Click(object sender, EventArgs e)
         {
-            Camion c = new Camion(rnd.Next(5000, 10000));
+            Camion c = new Camion(rnd.Next(5000, 8000));
             v.Add(c);
         }
 
         private void btnAuto_Click(object sender, EventArgs e)
         {
-            Auto a = new Auto(rnd.Next(1300, 5000));
+            Auto a = new Auto(rnd.Next(13, 50));
             v.Add(a);
         }
 

@@ -79,7 +79,7 @@ namespace Scontro_fra_veicoli
                         }
                     }
                 }
-                else//2 veicolid diversi si scontrano
+                else//2 veicoli diversi si scontrano
                 {
                     diff = v1.Dimensione + v1.Peso;
                     diff1 = v2.Dimensione + v2.Peso;
