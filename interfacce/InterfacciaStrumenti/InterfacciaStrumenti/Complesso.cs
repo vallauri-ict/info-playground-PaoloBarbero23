@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace InterfacciaStrumenti
 {
-    class Complesso
+    class Complesso : IComparable<Complesso c>
     {
         List<ISuonatore> suonatori = new List<ISuonatore>();
 
@@ -26,6 +26,11 @@ namespace InterfacciaStrumenti
             {
                 str.suona();
             }
+        }
+
+        public int CompareTo(object obj)
+        {
+            throw new NotImplementedException();
         }
     }
 }
